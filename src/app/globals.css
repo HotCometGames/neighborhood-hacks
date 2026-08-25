@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+@theme {
+  --color-near-black: #080808;
+  --color-off-white: #F2F1EC;
+  --color-paper: #E6E4DD;
+  --color-grid: #252525;
+  --color-gray: #9E9E9E;
+  --color-dim: #8A8A8A;
+  --color-accent: #D7FF00;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-hand: "Caveat", cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-mono);
+    background-color: var(--color-near-black);
+    color: var(--color-off-white);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-near-black);
+  }
+}
+
+/* Graph-paper grid background */
+.grid-bg {
+  background-image:
+    linear-gradient(var(--color-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Photocopy grain texture */
+.grain-overlay::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* Paper cutout shape — rough edges */
+.paper-cut {
+  background-color: var(--color-off-white);
+  color: var(--color-near-black);
+  clip-path: polygon(
+    0% 2%, 3% 0%, 15% 1%, 20% 0%, 40% 2%, 60% 0%, 80% 1%, 95% 0%, 100% 2%,
+    99% 20%, 100% 40%, 98% 60%, 100% 80%, 99% 95%, 100% 100%,
+    95% 99%, 80% 100%, 60% 98%, 40% 100%, 20% 99%, 5% 100%, 0% 98%,
+    1% 80%, 0% 60%, 2% 40%, 0% 20%
+  );
+}
+
+.paper-cut-sm {
+  background-color: var(--color-off-white);
+  color: var(--color-near-black);
+  clip-path: polygon(
+    0% 3%, 5% 0%, 25% 2%, 50% 0%, 75% 1%, 95% 0%, 100% 3%,
+    98% 25%, 100% 50%, 99% 75%, 100% 97%,
+    95% 100%, 75% 98%, 50% 100%, 25% 99%, 5% 100%, 0% 97%,
+    2% 75%, 0% 50%, 1% 25%
+  );
+}
+
+/* Rough border — hand-drawn feel */
+.rough-border {
+  border: 2px solid var(--color-off-white);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.rough-border-accent {
+  border: 2px solid var(--color-accent);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+/* Handwritten underline */
+.hand-underline {
+  text-decoration: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='8'%3E%3Cpath d='M0 6 Q50 0 100 5 T200 4' stroke='%23D7FF00' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 200px 8px;
+  padding-bottom: 4px;
+}
+
+/* Tape effect for collage pieces */
+.tape {
+  position: relative;
+}
+.tape::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 60px;
+  height: 16px;
+  background-color: var(--color-accent);
+  opacity: 0.6;
+  z-index: 1;
+}
+
+/* Card hover — rough lift */
+.card-hover {
+  transition: transform 0.15s ease;
+}
+.card-hover:hover {
+  transform: translate(-2px, -2px);
+}
+
+/* Tilted element */
+.tilt-left {
+  transform: rotate(-1.5deg);
+}
+.tilt-right {
+  transform: rotate(1.5deg);
+}
+.tilt-slight {
+  transform: rotate(-0.5deg);
+}
+
+/* Strikethrough accent */
+.strike-accent {
+  position: relative;
+}
+.strike-accent::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 45%;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-accent);
+  transform: rotate(-1deg);
+}
+
+/* Accordion animation */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.accordion-content.open {
+  max-height: 500px;
+}
+
+/* Marker highlight */
+.marker-highlight {
+  background-color: var(--color-accent);
+  color: var(--color-near-black);
+  padding: 0 4px;
+  display: inline;
+}
+
+/* Dashed border */
+.dashed-border {
+  border: 2px dashed var(--color-grid);
+}
+
+/* Dot leader */
+.dot-leader {
+  border-bottom: 1px dotted var(--color-grid);
+}
+
+/* Torn paper top edge */
+.torn-paper-top {
+  position: relative;
+  background-color: var(--color-off-white);
+  color: var(--color-near-black);
+}
+.torn-paper-top::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background-color: var(--color-off-white);
+  clip-path: polygon(
+    0% 100%, 2% 40%, 4% 80%, 6% 30%, 8% 70%, 10% 20%, 12% 60%, 14% 10%,
+    16% 55%, 18% 25%, 20% 75%, 22% 15%, 24% 65%, 26% 35%, 28% 85%,
+    30% 20%, 32% 60%, 34% 5%, 36% 50%, 38% 30%, 40% 70%, 42% 15%,
+    44% 55%, 46% 25%, 48% 80%, 50% 10%, 52% 60%, 54% 35%, 56% 75%,
+    58% 20%, 60% 55%, 62% 5%, 64% 65%, 66% 30%, 68% 85%, 70% 15%,
+    72% 50%, 74% 25%, 76% 70%, 78% 10%, 80% 60%, 82% 35%, 84% 80%,
+    86% 20%, 88% 55%, 90% 5%, 92% 65%, 94% 30%, 96% 75%, 98% 15%, 100% 100%
+  );
+}

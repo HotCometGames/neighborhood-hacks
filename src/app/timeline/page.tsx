@@ -1,0 +1,132 @@
+const milestones = [
+  {
+    date: "[Date]",
+    title: "REGISTRATION OPENS",
+    description: "Sign up and start forming your team.",
+  },
+  {
+    date: "[Date]",
+    title: "REGISTRATION CLOSES",
+    description: "Make sure you're registered and your team is final.",
+  },
+  {
+    date: "[Date]",
+    title: "OPENING CEREMONY",
+    description:
+      "Recorded + live-streamed for all timezones. Meet the community.",
+  },
+  {
+    date: "[Date] – [Date]",
+    title: "HACKING PERIOD (72 HOURS)",
+    description:
+      "Build your project. Work asynchronously with your team.",
+  },
+  {
+    date: "[Date]",
+    title: "SUBMISSIONS CLOSE",
+    description:
+      "Submit your project, written explanation, and demo before the deadline.",
+  },
+  {
+    date: "[Date] – [Date]",
+    title: "ROUND 1: AI SCREENING",
+    description: "Automated quality check on your written submission.",
+  },
+  {
+    date: "[Date] – [Date]",
+    title: "ROUND 2: PEER JUDGING",
+    description:
+      "A selected panel of students reviews submissions and selects the top 10.",
+  },
+  {
+    date: "[Date] – [Date]",
+    title: "ROUND 3: FINAL JUDGING",
+    description:
+      "Professional judges + student panelists review the top 10 and select winners.",
+  },
+  {
+    date: "[Date]",
+    title: "WINNERS ANNOUNCED",
+    description: "Closing ceremony with awards and celebration.",
+  },
+];
+
+export default function Timeline() {
+  return (
+    <section className="min-h-screen px-4 sm:px-8 pt-24 pb-16">
+      <div className="max-w-4xl mx-auto md:ml-24 lg:ml-40">
+        {/* Issue label */}
+        <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray mb-6 font-semibold">
+          PAGE_004 / HOW IT WORKS
+        </div>
+
+        <h1 className="font-display text-5xl sm:text-7xl font-bold text-off-white mb-2">
+          TIMELINE
+        </h1>
+        <p className="font-hand text-2xl text-accent mb-16 tilt-left">
+          your roadmap
+        </p>
+
+        {/* Format note — paper cutout */}
+        <div className="paper-cut p-6 mb-12">
+          <p className="font-mono text-base text-near-black/80 leading-relaxed font-semibold">
+            Fully virtual — participate from anywhere with internet. Live
+            workshops, mentor office hours, and a closing ceremony scheduled
+            across timezones. Recordings available for async participation.
+            Hacking runs for 72 hours.
+          </p>
+        </div>
+
+        {/* Timeline */}
+        <div className="mb-12">
+          {milestones.map((milestone, index) => (
+            <div key={index} className="flex gap-6 pb-10 relative">
+              {/* Number + line */}
+              <div className="flex flex-col items-center">
+                <div className="font-mono text-[11px] text-accent w-10 text-center shrink-0 font-semibold">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+                {index < milestones.length - 1 && (
+                  <div className="w-px flex-1 bg-grid mt-2" />
+                )}
+              </div>
+
+              {/* Content */}
+              <div className={`pb-2 ${index % 2 === 0 ? "" : "tilt-slight"}`}>
+                <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-dim font-semibold">
+                  {milestone.date}
+                </span>
+                <h3 className="font-display text-lg font-bold text-off-white mt-1">
+                  {milestone.title}
+                </h3>
+                <p className="font-mono text-sm text-gray mt-1 font-semibold">
+                  {milestone.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Team formation note */}
+        <div className="rough-border p-6 tilt-right">
+          <h2 className="font-display text-xl font-bold text-off-white mb-3">
+            TEAM FORMATION
+          </h2>
+          <p className="font-mono text-sm text-gray leading-relaxed font-semibold">
+            Teams of 3-5 students, no solo entries. Don&apos;t have a team yet?
+            Head to our{" "}
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:text-off-white underline underline-offset-2"
+            >
+              Discord
+            </a>{" "}
+            before the event to find teammates in the #team-formation channel.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
