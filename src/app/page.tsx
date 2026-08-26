@@ -26,15 +26,18 @@ export default function Home() {
 
           {/* Subtitle — handwritten */}
           <p className="font-hand text-3xl md:text-4xl text-dim mb-8 tilt-left">
-            build where you live.
+            Build locally, share globally
           </p>
 
           {/* Body — monospace */}
           <p className="font-mono text-base text-gray leading-relaxed max-w-xl mb-12 font-semibold">
-            A global hackathon for high schoolers who want to solve real
-            problems — not hypothetical ones. Over one weekend, students from
-            every continent design and build solutions to challenges
-            they&apos;ve personally seen in their own communities.
+            A global hackathon where high schoolers use technology to
+            solve real problems in their own communities. We believe the
+            most impactful builders start by looking at what's broken
+            around them and then build the fix. Over a week, students from
+            every continent design, build, and pitch solutions to challenges
+            they've personally witnessed at home, then join a global community of
+            young builders doing the same thing, everywhere else.
           </p>
 
           {/* CTAs — rough-bordered buttons */}
@@ -63,7 +66,7 @@ export default function Home() {
             <span className="text-grid">|</span>
             <span>💻 VIRTUAL</span>
             <span className="text-grid">|</span>
-            <span>⏱️ 72 HOURS</span>
+            <span>⏱️ A WEEK</span>
             <span className="text-grid">|</span>
             <span>👥 TEAMS OF 3-5</span>
             <span className="text-grid">|</span>

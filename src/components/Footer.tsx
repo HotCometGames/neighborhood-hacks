@@ -29,7 +29,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="font-hand text-lg text-near-black/60 mt-3">
-              build where you live
+              Build locally, share globally
             </p>
           </div>
 

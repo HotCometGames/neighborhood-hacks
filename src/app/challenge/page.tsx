@@ -77,7 +77,7 @@ export default function Challenge() {
         {/* Main Prompt — paper cutout */}
         <div className="paper-cut p-8 md:p-12 mb-12 text-center">
           <h2 className="font-display text-2xl font-bold text-near-black mb-4">
-            YOUR PROMPT
+            THE PROMPT
           </h2>
           <p className="font-display text-xl font-bold text-near-black/60">
             TO BE ANNOUNCED
@@ -109,7 +109,7 @@ export default function Challenge() {
         <div className="mb-12">
           <div className="flex items-end gap-4 mb-8">
             <h2 className="font-display text-2xl font-bold text-off-white">
-              OPTIONAL TRACKS
+              POSSIBLE TRACKS
             </h2>
             <span className="font-hand text-accent text-lg">
               (for inspiration)

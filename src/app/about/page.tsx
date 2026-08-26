@@ -21,11 +21,11 @@ export default function About() {
           </h2>
           <p className="font-mono text-base text-gray leading-relaxed max-w-2xl font-semibold">
             Neighborhood Hacks is a global hackathon where high schoolers use
-            technology to solve real problems in their own communities — not
+            technology to solve real problems in their own communities, not
             hypothetical ones. We believe the most impactful builders start by
             looking at what&apos;s broken around them and building the fix. Over
-            one weekend, students from every continent design, build, and pitch
-            solutions to challenges they&apos;ve personally witnessed at home —
+            one week, students from every continent design, build, and pitch
+            solutions to challenges they&apos;ve personally witnessed at home,
             then join a global community of young builders doing the same thing,
             everywhere else.
           </p>

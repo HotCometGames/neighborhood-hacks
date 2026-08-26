@@ -81,7 +81,7 @@ export default function Prizes() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {categoryAwards.map((award, i) => (
               <div
-                key={award.title}
+                key={i}
                 className={`p-6 text-center ${i === 0 ? "rough-border tilt-left" : "dashed-border"}`}
               >
                 <h3 className="font-display text-lg font-bold text-off-white mb-1">

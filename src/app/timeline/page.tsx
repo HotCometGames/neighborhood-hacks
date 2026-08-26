@@ -1,51 +1,46 @@
 const milestones = [
   {
-    date: "[Date]",
+    date: "September 1st",
     title: "REGISTRATION OPENS",
     description: "Sign up and start forming your team.",
   },
   {
-    date: "[Date]",
-    title: "REGISTRATION CLOSES",
-    description: "Make sure you're registered and your team is final.",
-  },
-  {
-    date: "[Date]",
-    title: "OPENING CEREMONY",
+    date: "October 16th",
+    title: "PROMPT ANNOUNCED + KICKOFF",
     description:
-      "Recorded + live-streamed for all timezones. Meet the community.",
+      "The hackathon officially begins! Join the kickoff event to learn about the challenge and meet your fellow participants.",
   },
   {
-    date: "[Date] – [Date]",
-    title: "HACKING PERIOD (72 HOURS)",
+    date: "October 16th – October 23rd",
+    title: "HACKING PERIOD (One Week)",
     description:
       "Build your project. Work asynchronously with your team.",
   },
   {
-    date: "[Date]",
+    date: "October 23rd 11:59 PM CST",
     title: "SUBMISSIONS CLOSE",
     description:
       "Submit your project, written explanation, and demo before the deadline.",
   },
   {
-    date: "[Date] – [Date]",
+    date: "October 24th – October 25th",
     title: "ROUND 1: AI SCREENING",
     description: "Automated quality check on your written submission.",
   },
   {
-    date: "[Date] – [Date]",
+    date: "TBD",
     title: "ROUND 2: PEER JUDGING",
     description:
       "A selected panel of students reviews submissions and selects the top 10.",
   },
   {
-    date: "[Date] – [Date]",
+    date: "TBD",
     title: "ROUND 3: FINAL JUDGING",
     description:
       "Professional judges + student panelists review the top 10 and select winners.",
   },
   {
-    date: "[Date]",
+    date: "TBD",
     title: "WINNERS ANNOUNCED",
     description: "Closing ceremony with awards and celebration.",
   },
@@ -73,7 +68,7 @@ export default function Timeline() {
             Fully virtual — participate from anywhere with internet. Live
             workshops, mentor office hours, and a closing ceremony scheduled
             across timezones. Recordings available for async participation.
-            Hacking runs for 72 hours.
+            Hacking runs for one week.
           </p>
         </div>
 
