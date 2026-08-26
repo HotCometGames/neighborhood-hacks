@@ -6,8 +6,8 @@ const footerLinks = [
 ];
 
 const externalLinks = [
-  { href: "#", label: "DISCORD" },
-  { href: "#", label: "DEVPOST" },
+  { href: "https://discord.gg/Kr3jRx4Bb", label: "DISCORD" },
+  { href: "https://neighborhood-hacks-2026.devpost.com/", label: "DEVPOST" },
   { href: "#", label: "INSTAGRAM" },
 ];
 

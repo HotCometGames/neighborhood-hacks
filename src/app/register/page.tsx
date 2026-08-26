@@ -23,7 +23,7 @@ export default function Register() {
           <p className="font-mono text-base text-near-black/80 leading-relaxed font-semibold">
             You&apos;ll need a team of 3-5 students (or find one on our{" "}
             <a
-              href="#"
+              href="https://discord.gg/Kr3jRx4Bb"
               target="_blank"
               rel="noopener noreferrer"
               className="text-near-black font-bold underline underline-offset-2 hover:text-accent"
@@ -43,7 +43,7 @@ export default function Register() {
             All registrations happen through our Devpost page.
           </p>
           <a
-            href="#"
+            href="https://neighborhood-hacks-2026.devpost.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block font-mono text-sm uppercase tracking-[0.15em] text-near-black bg-accent px-10 py-4 hover:bg-off-white transition-colors font-semibold"

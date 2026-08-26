@@ -51,7 +51,7 @@ export default function Navbar() {
           {/* Right side — external links + register */}
           <div className="flex items-center gap-3">
             <a
-              href="#"
+              href="https://discord.gg/Kr3jRx4Bb"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:flex font-mono text-[10px] uppercase tracking-[0.15em] text-gray hover:text-accent transition-colors font-semibold"
@@ -59,7 +59,7 @@ export default function Navbar() {
               DISCORD ↗
             </a>
             <a
-              href="#"
+              href="https://neighborhood-hacks-2026.devpost.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:flex font-mono text-[10px] uppercase tracking-[0.15em] text-gray hover:text-accent transition-colors font-semibold"
@@ -106,7 +106,7 @@ export default function Navbar() {
             </div>
             <div className="mt-6 pt-4 border-t border-grid flex gap-6">
               <a
-                href="#"
+                href="https://discord.gg/Kr3jRx4Bb"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-mono text-[10px] uppercase tracking-[0.15em] text-gray hover:text-accent transition-colors font-semibold"
@@ -114,7 +114,7 @@ export default function Navbar() {
                 DISCORD ↗
               </a>
               <a
-                href="#"
+                href="https://neighborhood-hacks-2026.devpost.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-mono text-[10px] uppercase tracking-[0.15em] text-gray hover:text-accent transition-colors font-semibold"
