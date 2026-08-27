@@ -30,7 +30,7 @@ const faqs = [
   {
     question: "HOW ARE MINORS KEPT SAFE?",
     answer:
-      "All mentors and judges are vetted, and we have a Code of Conduct with a clear reporting process for any concerns.",
+      "The discord page is monitored to ensure safe behavior. We also have a code of conduct that all participants must follow.",
   },
   {
     question: "WHAT IF MY TEAM IS IN DIFFERENT TIMEZONES?",

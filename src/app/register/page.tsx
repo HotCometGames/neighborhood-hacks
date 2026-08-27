@@ -21,7 +21,7 @@ export default function Register() {
             is free and open to high schoolers worldwide.
           </p>
           <p className="font-mono text-base text-near-black/80 leading-relaxed font-semibold">
-            You&apos;ll need a team of 3-5 students (or find one on our{" "}
+            We recommend creating a team (or find one on our{" "}
             <a
               href="https://discord.gg/Kr3jRx4Bb"
               target="_blank"
@@ -31,6 +31,7 @@ export default function Register() {
               Discord
             </a>
             ) and a real problem you care about. That&apos;s it.
+            *solo entries are allowed
           </p>
         </div>
 
