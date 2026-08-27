@@ -95,7 +95,7 @@ published to GitHub Pages via GitHub Actions.
 
 ### How it works
 
-- On every push to `main`, `.github/workflows/deploy.yml` builds the site and
+- On every push to `master`, `.github/workflows/deploy.yml` builds the site and
   uploads the `out/` folder to GitHub Pages.
 - `next.config.ts` sets `basePath` and `assetPrefix` to `/neighborhood-hacks`
   automatically when the `GITHUB_PAGES=true` env var is present (it is set in the
@@ -109,7 +109,7 @@ published to GitHub Pages via GitHub Actions.
    `next.config.ts` if yours differs).
 2. In the repo, go to **Settings → Pages → Build and deployment → Source** and
    select **"GitHub Actions"**.
-3. Push to `main` (or run the workflow manually under **Actions → Deploy to
+3. Push to `master` (or run the workflow manually under **Actions → Deploy to
    GitHub Pages**).
 4. Your site will be live at
    `https://<user>.github.io/neighborhood-hacks/`.
