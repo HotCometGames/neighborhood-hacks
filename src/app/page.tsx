@@ -170,7 +170,7 @@ export default function Home() {
             </h2>
             <p className="font-mono text-base text-near-black/80 mb-8 max-w-lg mx-auto font-semibold">
               Your neighborhood has problems worth solving. Grab a team of 3-5,
-              pick a real problem, and build the fix in 72 hours.
+              pick a real problem, and build the fix in a week.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

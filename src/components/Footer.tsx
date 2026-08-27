@@ -72,10 +72,10 @@ export default function Footer() {
               ))}
               <li>
                 <a
-                  href="mailto:hello@neighborhoodhacks.org"
+                  href="mailto:neighborhoodhacks@gmail.com"
                   className="font-mono text-sm text-near-black/70 hover:text-near-black transition-colors font-semibold"
                 >
-                  HELLO@NH.ORG
+                  neighborhoodhacks@gmail.com
                 </a>
               </li>
             </ul>

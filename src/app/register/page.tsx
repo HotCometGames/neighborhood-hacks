@@ -77,7 +77,7 @@ export default function Register() {
               {
                 step: "04",
                 title: "BUILD DURING THE EVENT",
-                desc: "When the hacking period starts, you'll have 72 hours to build your solution.",
+                desc: "When the hacking period starts, you'll have a week to build your solution.",
               },
             ].map((item, i) => (
               <div

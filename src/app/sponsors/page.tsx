@@ -21,7 +21,7 @@ export default function Sponsors() {
             giving students the tools to solve problems in their own
             communities.{" "}
             <a
-              href="mailto:hello@neighborhoodhacks.org"
+              href="mailto:neighborhoodhacks@gmail.com"
               className="text-accent hover:text-off-white underline underline-offset-2"
             >
               Interested in sponsoring? Reach out here
@@ -101,7 +101,7 @@ export default function Sponsors() {
             builders from around the world.
           </p>
           <a
-            href="mailto:hello@neighborhoodhacks.org"
+            href="mailto:neighborhoodhacks@gmail.com"
             className="inline-block font-mono text-sm uppercase tracking-[0.15em] bg-near-black text-off-white px-8 py-3 hover:bg-accent hover:text-near-black transition-colors font-semibold"
           >
             BECOME A SPONSOR →
