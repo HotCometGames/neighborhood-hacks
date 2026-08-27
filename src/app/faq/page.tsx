@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "DO I NEED A TEAM?",
     answer:
-      "Teams of 3-5 are highly recommended. If you don't have a team yet, join our Discord: we'll have a dedicated team-formation channel to help you find teammates before the event starts.",
+      "Teams of 3-5 are highly recommended, but not required. If you don't have a team yet, join our Discord: we'll have a dedicated team-formation channel to help you find teammates before the event starts.",
   },
   {
     question: "IS THERE A COST?",

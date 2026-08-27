@@ -65,9 +65,8 @@ export default function Timeline() {
         {/* Format note — paper cutout */}
         <div className="paper-cut p-6 mb-12">
           <p className="font-mono text-base text-near-black/80 leading-relaxed font-semibold">
-            Fully virtual — participate from anywhere with internet. Live
-            workshops, mentor office hours, and a closing ceremony scheduled
-            across timezones. Recordings available for async participation.
+            Fully virtual — participate from anywhere with internet. Join
+            the discord to get help from fellow participants from any timezone.
             Hacking runs for one week.
           </p>
         </div>
@@ -108,7 +107,7 @@ export default function Timeline() {
             TEAM FORMATION
           </h2>
           <p className="font-mono text-sm text-gray leading-relaxed font-semibold">
-            Teams of 3-5 students, no solo entries. Don&apos;t have a team yet?
+            Teams of 3-5 students suggested, however solo entries are allowed. Don&apos;t have a team yet?
             Head to our{" "}
             <a
               href="https://discord.gg/Kr3jRx4Bb"

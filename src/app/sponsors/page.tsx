@@ -97,7 +97,7 @@ export default function Sponsors() {
             WANT TO SUPPORT THE NEXT GENERATION?
           </h2>
           <p className="font-mono text-base text-near-black/80 mb-6 max-w-xl mx-auto font-semibold">
-            Your logo here. Sponsor Neighborhood Hacks and connect with young
+            Sponsor Neighborhood Hacks and connect with young
             builders from around the world.
           </p>
           <a

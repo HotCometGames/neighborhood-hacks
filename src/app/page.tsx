@@ -68,20 +68,13 @@ export default function Home() {
             <span className="text-grid">|</span>
             <span>⏱️ A WEEK</span>
             <span className="text-grid">|</span>
-            <span>👥 TEAMS OF 3-5</span>
+            <span>👥 FIND TEAMS</span>
             <span className="text-grid">|</span>
             <span className="text-accent">🏆 [$X] IN PRIZES</span>
           </div>
         </div>
 
-        {/* Decorative paper cutout — bottom right */}
-        <div className="absolute bottom-16 right-8 md:right-24 hidden md:block">
-          <div className="paper-cut-sm w-32 h-40 flex items-center justify-center p-4 tilt-left">
-            <span className="font-hand text-near-black text-center text-sm">
-              solve something real ↓
-            </span>
-          </div>
-        </div>
+
       </section>
 
       {/* Why Neighborhood Hacks */}
