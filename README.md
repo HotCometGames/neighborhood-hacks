@@ -9,7 +9,7 @@ A global hackathon website for high schoolers solving real problems in their own
 - **Framework:** Next.js 15 (App Router)
 - **Styling:** Tailwind CSS 4
 - **Language:** TypeScript
-- **Deployment:** Vercel
+- **Deployment:** GitHub Pages (static export)
 
 ## Design Direction
 
@@ -88,40 +88,46 @@ These placeholders in the code need real values before going live:
 - Code of Conduct — Fill in the placeholder content
 - AI policy — Update the FAQ answer about AI tool usage
 
-## Deploying to Vercel
+## Deploying to GitHub Pages
 
-### Option 1: Deploy from Git (Recommended)
+This site is built as a static export (`output: "export"` in `next.config.ts`) and
+published to GitHub Pages via GitHub Actions.
 
-1. Push this project to a GitHub repository
-2. Go to [vercel.com](https://vercel.com) and sign in with GitHub
-3. Click **"Add New Project"**
-4. Import your GitHub repository
-5. Vercel auto-detects Next.js — keep the default settings
-6. Click **Deploy**
-7. Your site will be live at `your-project.vercel.app`
+### How it works
 
-### Option 2: Deploy with Vercel CLI
+- On every push to `main`, `.github/workflows/deploy.yml` builds the site and
+  uploads the `out/` folder to GitHub Pages.
+- `next.config.ts` sets `basePath` and `assetPrefix` to `/neighborhood-hacks`
+  automatically when the `GITHUB_PAGES=true` env var is present (it is set in the
+  workflow). This makes all asset and route links resolve correctly under the
+  project subpath `https://<user>.github.io/neighborhood-hacks/`.
 
-1. Install the Vercel CLI:
-   ```bash
-   npm i -g vercel
-   ```
-2. Run from the project root:
-   ```bash
-   vercel
-   ```
-3. Follow the prompts — it will link to your Vercel account and deploy
-4. For production deployments:
-   ```bash
-   vercel --prod
-   ```
+### Steps
+
+1. Push this project to a GitHub repository named **`neighborhood-hacks`**
+   (the `basePath` must match the repo name — update `repoName` in
+   `next.config.ts` if yours differs).
+2. In the repo, go to **Settings → Pages → Build and deployment → Source** and
+   select **"GitHub Actions"**.
+3. Push to `main` (or run the workflow manually under **Actions → Deploy to
+   GitHub Pages**).
+4. Your site will be live at
+   `https://<user>.github.io/neighborhood-hacks/`.
 
 ### Custom Domain (Optional)
 
-1. In your Vercel dashboard, go to **Settings > Domains**
-2. Add your custom domain
-3. Update your DNS records as instructed by Vercel
-4. SSL is automatic
+1. In the repo, go to **Settings → Pages → Custom domain** and enter your domain.
+2. Update your DNS records as instructed by GitHub (SSL is automatic).
+3. If serving from the domain root (not a subpath), set `basePath`/`assetPrefix`
+   to empty in `next.config.ts`.
+
+### Local static preview
+
+```bash
+npm run build
+# serve the exported site, e.g.:
+npx serve out
+```
 
 ## Color Palette
 
