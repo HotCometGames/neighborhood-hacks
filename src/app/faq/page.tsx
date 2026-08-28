@@ -35,12 +35,12 @@ const faqs = [
   {
     question: "WHAT IF MY TEAM IS IN DIFFERENT TIMEZONES?",
     answer:
-      "That's completely fine — most of the hacking period is asynchronous, and key events are recorded for anyone who can't attend live.",
+      "That's completely fine — coordinate with your team to find a time that works for everyone. The hackathon is designed to be flexible and accommodate different schedules.",
   },
   {
     question: "CAN I USE AI TOOLS?",
     answer:
-      "[Fill in your policy — many modern hackathons explicitly allow AI coding assistants; state this clearly either way]",
+      "Yes! We encourage participants to use AI tools to enhance their projects, but we also expect that the work submitted is primarily your own. Make sure to understand the capabilities and limitations of any AI tools you use.",
   },
 ];
 
