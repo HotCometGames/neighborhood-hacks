@@ -49,7 +49,7 @@ export default function Home() {
               REGISTER NOW →
             </Link>
             <a
-              href="https://discord.gg/Kr3jRx4Bb"
+              href="https://discord.gg/7rfZsBk5kW"
               target="_blank"
               rel="noopener noreferrer"
               className="rough-border font-mono text-sm uppercase tracking-[0.15em] text-off-white px-8 py-4 hover:text-accent hover:border-accent transition-colors text-center font-semibold"

@@ -23,7 +23,7 @@ export default function Register() {
           <p className="font-mono text-base text-near-black/80 leading-relaxed font-semibold">
             We recommend creating a team (or find one on our{" "}
             <a
-              href="https://discord.gg/Kr3jRx4Bb"
+              href="https://discord.gg/7rfZsBk5kW"
               target="_blank"
               rel="noopener noreferrer"
               className="text-near-black font-bold underline underline-offset-2 hover:text-accent"
