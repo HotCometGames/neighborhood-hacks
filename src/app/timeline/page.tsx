@@ -2,7 +2,7 @@ const milestones = [
   {
     date: "August 28th",
     title: "REGISTRATION OPENS",
-    description: "Sign up and start forming your team.",
+    description: "Sign up and decide whether to build solo or with teammates.",
   },
   {
     date: "October 16th",
@@ -14,7 +14,7 @@ const milestones = [
     date: "October 16th – October 23rd",
     title: "HACKING PERIOD (One Week)",
     description:
-      "Build your project. Work asynchronously with your team.",
+      "Build your project. Work asynchronously on your own or with your team.",
   },
   {
     date: "October 23rd 11:59 PM CST",
@@ -24,20 +24,21 @@ const milestones = [
   },
   {
     date: "October 24th – October 25th",
-    title: "ROUND 1: AI SCREENING",
-    description: "Automated quality check on your written submission.",
+    title: "ROUND 1: AUTOMATED SCREENING",
+    description:
+      "An automated check confirms that every required part of the submission is present.",
   },
   {
     date: "TBD",
-    title: "ROUND 2: PEER JUDGING",
+    title: "ROUND 2: INITIAL REVIEW",
     description:
-      "A selected panel of students reviews submissions and selects the top 10.",
+      "Reviewers assess complete submissions using the rubric and choose the finalists.",
   },
   {
     date: "TBD",
-    title: "ROUND 3: FINAL JUDGING",
+    title: "ROUND 3: FINAL ROUND",
     description:
-      "Professional judges + student panelists review the top 10 and select winners.",
+      "Professional judges review the finalists and choose the winners.",
   },
   {
     date: "TBD",

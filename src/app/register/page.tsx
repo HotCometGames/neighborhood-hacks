@@ -67,8 +67,8 @@ export default function Register() {
               },
               {
                 step: "02",
-                title: "FIND YOUR TEAM",
-                desc: "Join our Discord and connect with other students in #team-formation.",
+                title: "CHOOSE HOW TO BUILD",
+                desc: "Build solo, bring teammates, or connect with other students in our Discord's #team-formation channel.",
               },
               {
                 step: "03",

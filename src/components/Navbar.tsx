@@ -12,7 +12,6 @@ const navLinks = [
   { href: "/prizes", label: "PRIZES" },
   { href: "/sponsors", label: "SPONSORS" },
   { href: "/faq", label: "FAQ" },
-  { href: "/rules", label: "RULES" },
 ];
 
 export default function Navbar() {
@@ -63,16 +62,10 @@ export default function Navbar() {
               href="https://neighborhood-hacks-2026.devpost.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex font-mono text-[10px] uppercase tracking-[0.15em] text-gray hover:text-accent transition-colors font-semibold"
-            >
-              DEVPOST ↗
-            </a>
-            <Link
-              href="/register"
               className="font-mono text-[10px] uppercase tracking-[0.15em] text-near-black bg-accent px-3 py-1.5 hover:bg-off-white transition-colors font-semibold"
             >
               REGISTER →
-            </Link>
+            </a>
 
             {/* Mobile menu button */}
             <button
@@ -113,14 +106,6 @@ export default function Navbar() {
                 className="font-mono text-[10px] uppercase tracking-[0.15em] text-gray hover:text-accent transition-colors font-semibold"
               >
                 DISCORD ↗
-              </a>
-              <a
-                href="https://neighborhood-hacks-2026.devpost.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-mono text-[10px] uppercase tracking-[0.15em] text-gray hover:text-accent transition-colors font-semibold"
-              >
-                DEVPOST ↗
               </a>
             </div>
           </nav>

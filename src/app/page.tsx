@@ -14,7 +14,7 @@ export default function Home() {
         <div className="max-w-5xl ml-0 md:ml-24 lg:ml-40 relative">
           {/* Issue number label */}
           <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray mb-6 font-semibold">
-            ISSUE_001 / 2026 — GLOBAL VIRTUAL EVENT
+            2026 — GLOBAL VIRTUAL EVENT
           </div>
 
           {/* Main title — large, brutalist */}
@@ -31,19 +31,16 @@ export default function Home() {
 
           {/* Body — monospace */}
           <p className="font-mono text-base text-gray leading-relaxed max-w-xl mb-12 font-semibold">
-            A global hackathon where high schoolers use technology to
-            solve real problems in their own communities. We believe the
-            most impactful builders start by looking at what's broken
-            around them and then build the fix. Over a week, students from
-            every continent design, build, and pitch solutions to challenges
-            they've personally witnessed at home, then join a global community of
-            young builders doing the same thing, everywhere else.
+            A global hackathon for high schoolers. Over seven days, students from
+            every continent design and build solutions to challenges in their
+            own communities. There are no skill requirements, and anyone in
+            high school is welcome to join.
           </p>
 
           {/* CTAs — rough-bordered buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <Link
-              href="/register"
+              href="https://neighborhood-hacks-2026.devpost.com/"
               className="rough-border-accent bg-accent text-near-black font-mono text-sm uppercase tracking-[0.15em] px-8 py-4 hover:bg-off-white transition-colors text-center font-semibold"
             >
               REGISTER NOW →
@@ -60,20 +57,29 @@ export default function Home() {
 
           {/* Stat line — editorial metadata */}
           <div className="flex flex-wrap gap-x-6 gap-y-2 font-mono text-[11px] uppercase tracking-[0.15em] text-dim font-semibold">
-            <span>🌍 WORLDWIDE</span>
+            <span>WORLDWIDE</span>
             <span className="text-grid">|</span>
-            <span>🧑‍🤝‍🧑 200–1K PARTICIPANTS</span>
+            <span>200–1K PARTICIPANTS</span>
             <span className="text-grid">|</span>
-            <span>💻 VIRTUAL</span>
+            <span>VIRTUAL</span>
             <span className="text-grid">|</span>
-            <span>⏱️ A WEEK</span>
+            <span>7 DAYS</span>
             <span className="text-grid">|</span>
-            <span>👥 FIND TEAMS</span>
+            <span>TEAMS OF 1-5</span>
             <span className="text-grid">|</span>
-            <span className="text-accent">🏆 [$X] IN PRIZES</span>
+            <span className="text-accent">[$X] IN PRIZES</span>
           </div>
+
         </div>
 
+        {/* Decorative paper cutout — bottom right */}
+        <div className="absolute bottom-16 right-8 md:right-24 hidden md:block">
+          <div className="paper-cut-sm w-28 h-36 flex items-center justify-center p-3 tilt-left">
+            <span className="font-hand text-near-black text-center text-sm">
+              Scroll ↓
+            </span>
+          </div>
+        </div>
 
       </section>
 
@@ -127,12 +133,12 @@ export default function Home() {
                 003
               </div>
               <h3 className="font-display text-xl font-bold text-off-white mb-3">
-                PEER-POWERED JUDGING
+                THREE-STAGE REVIEW
               </h3>
               <p className="font-mono text-base text-gray leading-relaxed font-semibold">
-                Real students help decide who moves forward, not just
-                professional judges. Your peers understand your ideas because
-                they&apos;re building alongside you.
+                Automated screening checks the requirements, an initial review
+                chooses the finalists, and professional judges choose the
+                winners.
               </p>
             </div>
 
@@ -162,12 +168,13 @@ export default function Home() {
               READY TO BUILD?
             </h2>
             <p className="font-mono text-base text-near-black/80 mb-8 max-w-lg mx-auto font-semibold">
-              Your neighborhood has problems worth solving. Grab a team of 3-5,
-              pick a real problem, and build the fix in a week.
+              Your neighborhood has problems worth solving. Work solo or with
+              up to four teammates, pick a real problem, and build the fix in a
+              week.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/register"
+                href="https://neighborhood-hacks-2026.devpost.com/"
                 className="font-mono text-sm uppercase tracking-[0.15em] bg-near-black text-off-white px-8 py-4 hover:bg-accent hover:text-near-black transition-colors font-semibold"
               >
                 REGISTER NOW →

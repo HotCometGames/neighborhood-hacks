@@ -1,24 +1,24 @@
 const rounds = [
   {
     round: "1",
-    title: "AI SCREENING",
-    judges: "AUTOMATED",
+    title: "AUTOMATED SCREENING",
+    judges: "REQUIREMENTS CHECK",
     description:
-      "A quality check on your written submission — making sure your problem and solution are clearly explained. Basic quality filter, not hard to pass.",
+      "An automated check confirms that every required part of your submission is present. Complete submissions advance to the initial review.",
   },
   {
     round: "2",
-    title: "PEER JUDGING",
-    judges: "STUDENT PANELISTS",
+    title: "INITIAL REVIEW",
+    judges: "FINALIST SELECTION",
     description:
-      "Panelists review submissions using our full rubric and select the top 10 projects to advance.",
+      "Reviewers assess each complete submission using the published rubric and choose the finalists.",
   },
   {
     round: "3",
     title: "FINAL ROUND",
-    judges: "PROFESSIONAL JUDGES + STUDENTS",
+    judges: "PROFESSIONAL JUDGES",
     description:
-      "The top 10 submissions get a closer, more thorough review. Judges select the Top 3 overall winners plus 2 category-specific awards.",
+      "Professional judges review the finalists and choose the overall and category winners.",
   },
 ];
 
@@ -73,15 +73,15 @@ export default function Judging() {
 
         {/* Intro */}
         <p className="font-mono text-base text-gray leading-relaxed mb-12 max-w-2xl font-semibold">
-          Every project goes through three rounds of judging — designed to be
-          fair, thorough, and genuinely focused on impact, not just technical
-          polish.
+          Submissions move through a three-stage process: automated screening
+          checks the requirements, an initial review chooses the finalists, and
+          professional judges choose the winners in the final round.
         </p>
 
         {/* Rounds */}
         <div className="mb-16">
           <h2 className="font-display text-2xl font-bold text-off-white mb-6">
-            JUDGING ROUNDS
+            REVIEW &amp; JUDGING PROCESS
           </h2>
           <div className="space-y-4">
             {rounds.map((round, i) => (
@@ -114,11 +114,11 @@ export default function Judging() {
         <div>
           <div className="flex items-end gap-4 mb-2">
             <h2 className="font-display text-2xl font-bold text-off-white">
-              JUDGING RUBRIC
+              REVIEW &amp; JUDGING RUBRIC
             </h2>
           </div>
           <p className="font-hand text-accent text-lg mb-8">
-            published openly so you know what we&apos;re looking for
+            used during initial review and the final round
           </p>
 
           {/* Desktop table */}

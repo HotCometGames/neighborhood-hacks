@@ -37,57 +37,22 @@ export default function Sponsors() {
           </p>
         </div>
 
-        {/* Sponsor tiers */}
-        <div className="space-y-12">
-          {/* Platinum */}
-          <div>
-            <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray mb-6 font-semibold">
-              PLATINUM
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-              {[1, 2, 3].map((i) => (
-                <div
-                  key={i}
-                  className="paper-cut-sm aspect-video flex items-center justify-center"
-                >
-                  <span className="font-mono text-sm text-near-black/50 font-semibold">[LOGO]</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Gold */}
-          <div>
-            <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray mb-6 font-semibold">
-              GOLD
-            </h2>
-            <div className="grid grid-cols-3 md:grid-cols-4 gap-6">
-              {[1, 2, 3, 4].map((i) => (
-                <div
-                  key={i}
-                  className="rough-border aspect-video flex items-center justify-center"
-                >
-                  <span className="font-mono text-sm text-dim font-semibold">[LOGO]</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Community */}
-          <div>
-            <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray mb-6 font-semibold">
-              COMMUNITY PARTNERS
-            </h2>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div
-                  key={i}
-                  className="dashed-border aspect-square flex items-center justify-center"
-                >
-                  <span className="font-mono text-[11px] text-dim font-semibold">[LOGO]</span>
-                </div>
-              ))}
-            </div>
+        {/* Equal-weight sponsor grid */}
+        <div>
+          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray mb-6 font-semibold">
+            OUR SPONSORS &amp; PARTNERS
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div
+                key={i}
+                className="paper-cut-sm aspect-video flex items-center justify-center"
+              >
+                <span className="font-mono text-sm text-near-black/50 font-semibold">
+                  [LOGO]
+                </span>
+              </div>
+            ))}
           </div>
         </div>
 

@@ -35,7 +35,7 @@ type CardStyle = "paper" | "rough" | "dashed";
 
 function getCardStyle(index: number): CardStyle {
   const mod = index % 3;
-  if (mod === 0) return "paper";
+  if (mod === 0) return "dashed";
   if (mod === 1) return "rough";
   return "dashed";
 }
@@ -84,27 +84,6 @@ export default function Challenge() {
           </p>
         </div>
 
-        {/* Submission Question — rough border */}
-        <div className="rough-border p-8 md:p-12 mb-12 tilt-right">
-          <h2 className="font-display text-2xl font-bold text-off-white mb-4">
-            REQUIRED SUBMISSION QUESTION
-          </h2>
-          <p className="font-mono text-base text-gray leading-relaxed mb-4 font-semibold">
-            As part of your submission, every team will answer:
-          </p>
-          <blockquote className="border-l-4 border-accent pl-6 py-2 mb-4">
-            <p className="font-display text-lg text-off-white italic">
-              &ldquo;What is the specific problem, and how do you know it&apos;s
-              real?&rdquo;
-            </p>
-          </blockquote>
-          <p className="font-mono text-base text-gray leading-relaxed font-semibold">
-            Tell us what you&apos;ve observed, who you&apos;ve talked to, or
-            data you&apos;ve found. This is the heart of your project, so start
-            here before you start coding.
-          </p>
-        </div>
-
         {/* Optional Tracks */}
         <div className="mb-12">
           <div className="flex items-end gap-4 mb-8">
@@ -142,13 +121,6 @@ export default function Challenge() {
               );
             })}
           </div>
-        </div>
-
-        {/* Reminder — handwritten note */}
-        <div className="p-6 border-l-4 border-accent">
-          <p className="font-hand text-xl text-off-white">
-            remember: find the problem first, then build
-          </p>
         </div>
       </div>
     </section>

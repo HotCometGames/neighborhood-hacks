@@ -11,13 +11,13 @@ export default function About() {
           ABOUT
         </h1>
         <p className="font-hand text-2xl text-accent mb-16 tilt-left">
-          what we&apos;re doing and why
+          why we made Neighborhood Hacks
         </p>
 
         {/* Mission */}
         <div className="mb-16">
           <h2 className="font-display text-2xl font-bold text-off-white mb-6">
-            OUR MISSION
+            WHAT IT IS
           </h2>
           <p className="font-mono text-base text-gray leading-relaxed max-w-2xl font-semibold">
             Neighborhood Hacks is a global hackathon where high schoolers use
@@ -31,76 +31,80 @@ export default function About() {
           </p>
         </div>
 
-        {/* Origin story — paper cutout */}
+        {/* Origin story */}
         <div className="paper-cut p-8 md:p-12 mb-16 tilt-right">
           <h2 className="font-display text-2xl font-bold text-near-black mb-6">
-            WHY WE STARTED THIS
+            HOW IT STARTED
           </h2>
           <p className="font-mono text-base text-near-black/80 leading-relaxed mb-4 font-semibold">
-            Caleb and Kian started Neighborhood Hacks because we noticed
-            something: most hackathons ask students to build for hypothetical
-            users or abstract problems. We wanted to flip that.
+            Caleb and Kian started Neighborhood Hacks after noticing that many
+            hackathon prompts had little to do with students&apos; daily lives. They
+            wanted to make an event based on problems students already know
+            firsthand.
           </p>
           <p className="font-mono text-base text-near-black/80 leading-relaxed font-semibold">
-            We wanted a hackathon where a student in a flood-prone town, a
-            student worried about food access, or a student frustrated by their
-            local bus schedule could all build something that actually mattered:
-            to people they actually know.
+            Projects can focus on health and wellbeing, environmental
+            sustainability, education and access, community safety, civic
+            connection, accessibility, or inclusion. The topic is up to each
+            student, as long as it comes from their own community.
           </p>
         </div>
 
         {/* Who this is for */}
         <div className="mb-16">
           <h2 className="font-display text-2xl font-bold text-off-white mb-6">
-            WHO THIS IS FOR
+            WHO CAN JOIN
           </h2>
           <p className="font-mono text-base text-gray leading-relaxed max-w-2xl font-semibold">
-            Neighborhood Hacks is open to high schoolers worldwide, regardless
-            of experience level. You don&apos;t need to have coded before, you
-            need a real problem you care about and the willingness to try
-            building something for it.
+            Any high school student can join from anywhere in the world. The
+            event is free, and you do not need coding or hackathon experience.
+            You can work on your own or with a team of up to five. Come with a
+            problem in your community that you want to understand better.
           </p>
         </div>
 
-        {/* Values — asymmetric grid */}
+        {/* Values */}
         <div>
           <h2 className="font-display text-2xl font-bold text-off-white mb-8">
-            WHAT WE BELIEVE
+            WHAT MATTERS HERE
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="rough-border p-6 tilt-left">
               <h3 className="font-display font-bold text-off-white mb-2">
-                LOCAL KNOWLEDGE IS EXPERT KNOWLEDGE
+                LOCAL CONTEXT
               </h3>
               <p className="font-mono text-sm text-gray font-semibold">
-                No one understands your community&apos;s problems better than
-                the people who live there.
+                People who live in a place notice details that outsiders may
+                miss. We want students to use that knowledge when choosing what
+                to build.
               </p>
             </div>
             <div className="paper-cut-sm p-6 tilt-right">
               <h3 className="font-display font-bold text-near-black mb-2">
-                TECHNOLOGY SHOULD SERVE PEOPLE
+                USEFUL WORK
               </h3>
               <p className="font-mono text-sm text-near-black/70 font-semibold">
-                The best projects start with a human problem, not a tech demo.
+                Technology should fit the problem and be useful to the people
+                affected by it.
               </p>
             </div>
             <div className="dashed-border p-6">
               <h3 className="font-display font-bold text-off-white mb-2">
-                ACCESSIBLE MEANS ACCESSIBLE
+                OPEN TO BEGINNERS
               </h3>
               <p className="font-mono text-sm text-gray font-semibold">
-                Free to participate. Beginner-friendly. Designed for every
-                timezone and skill level.
+                No prior experience is required. We offer help during the week
+                and schedule activities across time zones.
               </p>
             </div>
             <div className="rough-border p-6 tilt-slight">
               <h3 className="font-display font-bold text-off-white mb-2">
-                COMMUNITY OVER COMPETITION
+                LEARNING TOGETHER
               </h3>
               <p className="font-mono text-sm text-gray font-semibold">
-                We&apos;re building a global network of young people who care
-                about their communities — not just a leaderboard.
+                Projects will be judged, but rankings are only one part of the
+                event. Neighborhood Hacks is also a place to meet students from
+                other communities and learn from their work.
               </p>
             </div>
           </div>

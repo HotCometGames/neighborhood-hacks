@@ -25,7 +25,7 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: "Neighborhood Hacks — Build Locally, Share Globally",
   description:
-    "A global hackathon for high schoolers who want to solve real problems — not hypothetical ones. Over one weekend, students from every continent design and build solutions to challenges they've personally seen in their own communities.",
+    "A global hackathon for high schoolers. Over seven days, students worldwide design and build solutions to challenges in their own communities.",
 };
 
 export default function RootLayout({
