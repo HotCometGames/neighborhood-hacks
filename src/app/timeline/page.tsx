@@ -1,6 +1,6 @@
 const milestones = [
   {
-    date: "September 1st",
+    date: "August 28th",
     title: "REGISTRATION OPENS",
     description: "Sign up and start forming your team.",
   },

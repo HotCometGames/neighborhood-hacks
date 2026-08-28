@@ -20,11 +20,16 @@ export default function CodeOfConduct() {
               OUR COMMITMENT
             </h2>
             <p className="font-mono text-base text-gray leading-relaxed font-semibold">
-              [Placeholder: Add your full Code of Conduct text here. This should
-              cover expectations for participant behavior, mentor/judge
-              interactions, reporting processes, and consequences for violations.
-              Consider referencing codes from established organizations like MLH
-              or Ada Lovelace Society as a starting point.]
+              Neighborhood Hacks exists to help high schoolers build meaningful
+              projects in a supportive, safe environment. Because most of our
+              participants are minors and this is an international, largely
+              virtual event, we hold ourselves to a high standard of conduct:
+              for participants, judges, sponsors, and organizers alike.
+            </p>
+            <p className="font-mono text-base text-gray leading-relaxed font-semibold mt-4">
+              This Code of Conduct applies everywhere Neighborhood Hacks
+              happens: our Discord server, website, Devpost page, YouTube
+              comments, team calls, and any other official event space.
             </p>
           </div>
 
@@ -32,39 +37,161 @@ export default function CodeOfConduct() {
             <h2 className="font-display text-2xl font-bold text-near-black mb-4">
               EXPECTED BEHAVIOR
             </h2>
-            <p className="font-mono text-base text-near-black/80 leading-relaxed font-semibold">
-              [Placeholder: List expected behaviors — respect, inclusion,
-              constructive feedback, etc.]
-            </p>
+            <ul className="font-mono text-base text-near-black/80 leading-relaxed font-semibold space-y-2">
+              <li>
+                Treat everyone with respect, regardless of background, identity,
+                nationality, skill level, or experience.
+              </li>
+              <li>
+                Communicate professionally and kindly, especially across
+                cultural and language differences.
+              </li>
+              <li>Give constructive feedback, and receive it graciously.</li>
+              <li>Respect people&apos;s time, boundaries, and privacy.</li>
+              <li>
+                Help create a welcoming environment for first-time hackers.
+              </li>
+              <li>
+                Report concerns when you see them, rather than handling
+                conflicts alone.
+              </li>
+            </ul>
           </div>
 
           <div className="rough-border p-6 tilt-right">
             <h2 className="font-display text-2xl font-bold text-off-white mb-4">
               UNACCEPTABLE BEHAVIOR
             </h2>
-            <p className="font-mono text-base text-gray leading-relaxed font-semibold">
-              [Placeholder: List behaviors that are not tolerated — harassment,
-              discrimination, cheating, etc.]
+            <p className="font-mono text-base text-gray leading-relaxed font-semibold mb-4">
+              The following are not tolerated under any circumstances:
             </p>
-          </div>
-
-          <div>
-            <h2 className="font-display text-2xl font-bold text-off-white mb-4">
-              REPORTING PROCESS
-            </h2>
-            <p className="font-mono text-base text-gray leading-relaxed font-semibold">
-              [Placeholder: How to report concerns — email, Discord DM, form,
-              etc. Include specific contact information.]
-            </p>
+            <ul className="font-mono text-base text-gray leading-relaxed font-semibold space-y-3">
+              <li>
+                Harassment of any kind, including but not limited to: offensive
+                comments related to identity, gender, sexual orientation,
+                disability, race, ethnicity, religion, or nationality; unwelcome
+                sexual attention or comments; deliberate intimidation, stalking,
+                or following; sustained disruption of events or discussions.
+              </li>
+              <li>
+                Any romantic or sexual conduct directed at a minor participant,
+                from anyone, under any circumstances. This includes comments,
+                jokes, private messaging of a romantic/sexual nature, requests
+                for personal photos, or attempts to move conversations to
+                private/unofficial channels outside official event spaces.
+              </li>
+              <li>
+                Any attempt by an adult (judge, sponsor) to establish private,
+                unsupervised contact with a minor participant outside official
+                event channels (e.g., personal social media, personal phone
+                number, off-platform messaging apps) is strictly prohibited,
+                regardless of stated intent.
+              </li>
+              <li>
+                Bullying, threats, or discriminatory jokes/language, even if
+                framed as humor.
+              </li>
+              <li>
+                Sharing or requesting personal contact information (home
+                address, phone number, personal social media) from other
+                participants without mutual consent and a legitimate reason.
+              </li>
+              <li>
+                Academic dishonesty, including plagiarizing code, designs, or
+                ideas without credit, or misrepresenting work as original when
+                it isn&apos;t.
+              </li>
+              <li>
+                Impersonation of another participant, organizer, judge, or
+                sponsor.
+              </li>
+              <li>
+                Sharing inappropriate, violent, or sexual content in any event
+                space.
+              </li>
+              <li>
+                Doxxing — publishing anyone&apos;s private information without
+                consent.
+              </li>
+              <li>
+                Sabotage of another team&apos;s project, submission, or event
+                experience.
+              </li>
+              <li>
+                Retaliation against anyone who reports a concern in good faith.
+              </li>
+            </ul>
           </div>
 
           <div className="dashed-border p-6">
             <h2 className="font-display text-2xl font-bold text-off-white mb-4">
-              CONSEQUENCES
+              EXTRA PROTECTIONS FOR MINORS
             </h2>
+            <p className="font-mono text-base text-gray leading-relaxed font-semibold mb-4">
+              Because the majority of our participants are minors, we apply
+              additional safeguards:
+            </p>
+            <ul className="font-mono text-base text-gray leading-relaxed font-semibold space-y-3">
+              <li>
+                Adults should avoid one-on-one private communication with minor
+                participants; team-based or group settings (e.g., team voice
+                calls, group office hours) are the expected norm.
+              </li>
+              <li>
+                Any adult who receives an unsolicited private message from a
+                minor participant of a personal nature should redirect the
+                conversation to official channels and notify event staff.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="font-display text-2xl font-bold text-off-white mb-4">
+              REPORTING A CONCERN
+            </h2>
+            <p className="font-mono text-base text-gray leading-relaxed font-semibold mb-4">
+              If you experience or witness a violation of this Code of Conduct,
+              please email{" "}
+              <a
+                href="mailto:neighborhoodhacks@gmail.com"
+                className="text-accent underline"
+              >
+                neighborhoodhacks@gmail.com
+              </a>
+            </p>
             <p className="font-mono text-base text-gray leading-relaxed font-semibold">
-              [Placeholder: What happens when the Code of Conduct is violated —
-              warnings, disqualification, banning, etc.]
+              We take every report seriously and will respond promptly.
+              Retaliation against anyone who reports in good faith is itself a
+              Code of Conduct violation.
+            </p>
+          </div>
+
+          <div className="paper-cut-sm p-6">
+            <h2 className="font-display text-2xl font-bold text-near-black mb-4">
+              ENFORCEMENT
+            </h2>
+            <p className="font-mono text-base text-near-black/80 leading-relaxed font-semibold mb-4">
+              Depending on severity, consequences may include:
+            </p>
+            <ul className="font-mono text-base text-near-black/80 leading-relaxed font-semibold space-y-2">
+              <li>A verbal or written warning</li>
+              <li>
+                Temporary removal from event spaces (Discord, calls, etc.)
+              </li>
+              <li>Disqualification from judging or prizes</li>
+              <li>
+                Permanent removal from the event and all associated spaces
+              </li>
+              <li>
+                Reporting to law enforcement or relevant authorities, where
+                warranted (e.g., any indication of child exploitation, threats
+                of violence, or illegal activity)
+              </li>
+            </ul>
+            <p className="font-mono text-base text-near-black/80 leading-relaxed font-semibold mt-4">
+              Organizer decisions on enforcement are final. We prioritize
+              participant safety over any single team&apos;s placement or
+              continued participation.
             </p>
           </div>
         </div>
