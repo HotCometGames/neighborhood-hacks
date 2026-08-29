@@ -11,14 +11,14 @@ export default function Home() {
         </div>
 
         {/* Main content — asymmetric, offset left */}
-        <div className="max-w-5xl ml-0 md:ml-24 lg:ml-40 relative">
+        <div className="w-full min-w-0 max-w-5xl ml-0 md:ml-12 lg:ml-24 xl:ml-40 relative">
           {/* Issue number label */}
           <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray mb-6 font-semibold">
             2026 — GLOBAL VIRTUAL EVENT
           </div>
 
           {/* Main title — large, brutalist */}
-          <h1 className="font-display text-6xl sm:text-8xl lg:text-[10rem] font-bold text-off-white leading-[0.85] mb-8">
+          <h1 className="font-display text-[clamp(2.4rem,11vw,10rem)] font-bold text-off-white leading-[0.85] mb-8">
             NEIGHBORHOOD
             <br />
             <span className="text-accent">HACKS</span>
@@ -30,7 +30,7 @@ export default function Home() {
           </p>
 
           {/* Body — monospace */}
-          <p className="font-mono text-base text-gray leading-relaxed max-w-xl mb-12 font-semibold">
+          <p className="font-mono text-sm sm:text-base text-gray leading-relaxed max-w-xl mb-12 font-semibold">
             A global hackathon for high schoolers. Over seven days, students from
             every continent design and build solutions to challenges in their
             own communities. There are no skill requirements, and anyone in
@@ -58,22 +58,22 @@ export default function Home() {
           {/* Stat line — editorial metadata */}
           <div className="flex flex-wrap gap-x-6 gap-y-2 font-mono text-[11px] uppercase tracking-[0.15em] text-dim font-semibold">
             <span>WORLDWIDE</span>
-            <span className="text-grid">|</span>
+            <span className="hidden sm:inline text-grid">|</span>
             <span>200–1K PARTICIPANTS</span>
-            <span className="text-grid">|</span>
+            <span className="hidden sm:inline text-grid">|</span>
             <span>VIRTUAL</span>
-            <span className="text-grid">|</span>
+            <span className="hidden sm:inline text-grid">|</span>
             <span>7 DAYS</span>
-            <span className="text-grid">|</span>
+            <span className="hidden sm:inline text-grid">|</span>
             <span>TEAMS OF 1-5</span>
-            <span className="text-grid">|</span>
+            <span className="hidden sm:inline text-grid">|</span>
             <span className="text-accent">[$X] IN PRIZES</span>
           </div>
 
         </div>
 
         {/* Decorative paper cutout — bottom right */}
-        <div className="absolute bottom-16 right-8 md:right-24 hidden md:block">
+        <div className="absolute bottom-16 right-8 lg:right-24 hidden lg:block">
           <div className="paper-cut-sm w-28 h-36 flex items-center justify-center p-3 tilt-left">
             <span className="font-hand text-near-black text-center text-sm">
               Scroll ↓
@@ -87,18 +87,18 @@ export default function Home() {
       <section className="py-24 px-4 sm:px-8 border-t border-grid">
         <div className="max-w-6xl mx-auto">
           {/* Section header — handwritten annotation */}
-          <div className="flex items-end gap-4 mb-16">
+          <div className="flex flex-col items-start gap-1 sm:flex-row sm:items-end sm:gap-4 mb-16">
             <h2 className="font-display text-4xl sm:text-5xl font-bold text-off-white">
               WHY THIS?
             </h2>
-            <span className="font-hand text-accent text-xl mb-1">
+            <span className="font-hand text-accent text-xl sm:mb-1 whitespace-nowrap">
               (glad you asked)
             </span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Card 1 — paper cutout */}
-            <div className="paper-cut p-8 card-hover tilt-right">
+            <div className="paper-cut p-6 sm:p-8 card-hover tilt-right">
               <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-near-black/50 mb-3 font-semibold">
                 001
               </div>
@@ -113,7 +113,7 @@ export default function Home() {
             </div>
 
             {/* Card 2 — rough border */}
-            <div className="rough-border p-8 card-hover tilt-right">
+            <div className="rough-border p-6 sm:p-8 card-hover tilt-right">
               <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray mb-3 font-semibold">
                 002
               </div>
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
 
             {/* Card 3 — dashed border */}
-            <div className="dashed-border p-8 card-hover tilt-left">
+            <div className="dashed-border p-6 sm:p-8 card-hover tilt-left">
               <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray mb-3 font-semibold">
                 003
               </div>
@@ -143,7 +143,7 @@ export default function Home() {
             </div>
 
             {/* Card 4 — paper cutout */}
-            <div className="paper-cut p-8 card-hover tilt-left">
+            <div className="paper-cut p-6 sm:p-8 card-hover tilt-left">
               <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-near-black/50 mb-3 font-semibold">
                 004
               </div>
@@ -163,7 +163,7 @@ export default function Home() {
       {/* CTA Banner — paper strip */}
       <section className="py-20 px-4 sm:px-8 border-t border-grid">
         <div className="max-w-4xl mx-auto">
-          <div className="paper-cut p-12 md:p-16 text-center tilt-slight">
+          <div className="paper-cut p-6 sm:p-12 md:p-16 text-center tilt-slight">
             <h2 className="font-display text-3xl sm:text-5xl font-bold text-near-black mb-6">
               READY TO BUILD?
             </h2>
@@ -174,13 +174,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="https://neighborhood-hacks-2026.devpost.com/"
-                className="font-mono text-sm uppercase tracking-[0.15em] bg-near-black text-off-white px-8 py-4 hover:bg-accent hover:text-near-black transition-colors font-semibold"
+                className="font-mono text-sm uppercase tracking-[0.15em] bg-near-black text-off-white px-5 sm:px-8 py-4 hover:bg-accent hover:text-near-black transition-colors font-semibold"
               >
                 REGISTER NOW →
               </Link>
               <Link
                 href="/challenge"
-                className="font-mono text-sm uppercase tracking-[0.15em] text-near-black border-2 border-near-black px-8 py-4 hover:bg-near-black hover:text-off-white transition-colors font-semibold"
+                className="font-mono text-sm uppercase tracking-[0.15em] text-near-black border-2 border-near-black px-5 sm:px-8 py-4 hover:bg-near-black hover:text-off-white transition-colors font-semibold"
               >
                 SEE THE CHALLENGE
               </Link>

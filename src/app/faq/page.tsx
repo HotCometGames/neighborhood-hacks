@@ -98,7 +98,7 @@ export default function FAQ() {
                   onClick={() =>
                     setOpenIndex(openIndex === index ? null : index)
                   }
-                  className="w-full text-left px-6 py-4 flex items-center justify-between gap-4"
+                  className="w-full text-left px-4 sm:px-6 py-4 flex items-center justify-between gap-3 sm:gap-4"
                 >
                   <span
                     className={`font-display font-bold text-sm ${questionColor(style)}`}
@@ -126,7 +126,7 @@ export default function FAQ() {
                   className={`accordion-content ${openIndex === index ? "open" : ""}`}
                 >
                   <div
-                    className={`px-6 pb-4 font-mono text-base leading-relaxed font-semibold ${answerColor(style)}`}
+                    className={`px-4 sm:px-6 pb-4 font-mono text-base leading-relaxed font-semibold ${answerColor(style)}`}
                   >
                     {faq.answer}
                   </div>

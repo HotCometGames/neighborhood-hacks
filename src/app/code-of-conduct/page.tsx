@@ -66,7 +66,7 @@ export default function CodeOfConduct() {
               If you experience or witness a problem, email{" "}
               <a
                 href="mailto:neighborhoodhacks@gmail.com"
-                className="text-accent underline"
+                className="text-accent underline [overflow-wrap:anywhere]"
               >
                 neighborhoodhacks@gmail.com
               </a>

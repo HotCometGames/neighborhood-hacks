@@ -23,7 +23,7 @@ export default function Navbar() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-near-black/90 backdrop-blur-sm border-b border-grid">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-14">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex min-h-11 items-center gap-2 group">
             <span className="font-display text-lg font-bold text-off-white group-hover:text-accent transition-colors">
               NH
             </span>
@@ -62,7 +62,7 @@ export default function Navbar() {
               href="https://neighborhood-hacks-2026.devpost.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-[10px] uppercase tracking-[0.15em] text-near-black bg-accent px-3 py-1.5 hover:bg-off-white transition-colors font-semibold"
+              className="inline-flex min-h-11 items-center font-mono text-[10px] uppercase tracking-[0.15em] text-near-black bg-accent px-3 hover:bg-off-white transition-colors font-semibold"
             >
               REGISTER →
             </a>
@@ -70,7 +70,7 @@ export default function Navbar() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden font-mono text-[10px] uppercase tracking-[0.15em] text-gray hover:text-accent transition-colors font-semibold"
+              className="inline-flex min-h-11 items-center px-2 lg:hidden font-mono text-[10px] uppercase tracking-[0.15em] text-gray hover:text-accent transition-colors font-semibold"
             >
               [{isOpen ? "CLOSE" : "MENU"}]
             </button>
@@ -80,7 +80,7 @@ export default function Navbar() {
 
       {/* Mobile dropdown nav */}
       {isOpen && (
-        <div className="fixed top-14 left-0 right-0 z-40 bg-near-black/98 backdrop-blur-sm border-b border-grid lg:hidden">
+        <div className="fixed top-14 bottom-0 left-0 right-0 z-40 overflow-y-auto bg-near-black/98 backdrop-blur-sm border-b border-grid lg:hidden">
           <nav className="max-w-7xl mx-auto px-4 sm:px-8 py-6">
             <div className="space-y-3">
               {navLinks.map((link, i) => (

@@ -86,11 +86,11 @@ export default function Challenge() {
 
         {/* Optional Tracks */}
         <div className="mb-12">
-          <div className="flex items-end gap-4 mb-8">
+          <div className="flex flex-col items-start gap-1 sm:flex-row sm:items-end sm:gap-4 mb-8">
             <h2 className="font-display text-2xl font-bold text-off-white">
               POSSIBLE TRACKS
             </h2>
-            <span className="font-hand text-accent text-lg">
+            <span className="font-hand text-accent text-lg whitespace-nowrap">
               (for inspiration)
             </span>
           </div>

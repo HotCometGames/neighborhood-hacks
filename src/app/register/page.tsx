@@ -15,7 +15,7 @@ export default function Register() {
         </p>
 
         {/* Intro — paper cutout */}
-        <div className="paper-cut p-8 md:p-12 mb-12">
+        <div className="paper-cut p-6 sm:p-8 md:p-12 mb-12">
           <p className="font-mono text-base text-near-black/80 leading-relaxed mb-6 font-semibold">
             Ready to build something that matters where you live? Registration
             is free and open to high schoolers worldwide.
@@ -36,7 +36,7 @@ export default function Register() {
         </div>
 
         {/* Devpost CTA — rough border */}
-        <div className="rough-border p-8 md:p-12 text-center mb-12 tilt-right">
+        <div className="rough-border p-5 sm:p-8 md:p-12 text-center mb-12 tilt-right">
           <h2 className="font-display text-2xl font-bold text-off-white mb-4">
             REGISTER ON DEVPOST
           </h2>
@@ -47,7 +47,7 @@ export default function Register() {
             href="https://neighborhood-hacks-2026.devpost.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block font-mono text-sm uppercase tracking-[0.15em] text-near-black bg-accent px-10 py-4 hover:bg-off-white transition-colors font-semibold"
+            className="inline-block font-mono text-sm uppercase tracking-[0.15em] text-near-black bg-accent px-5 sm:px-10 py-3 sm:py-4 hover:bg-off-white transition-colors font-semibold"
           >
             REGISTER ON DEVPOST →
           </a>

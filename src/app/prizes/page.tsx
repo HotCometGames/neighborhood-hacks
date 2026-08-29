@@ -53,11 +53,11 @@ export default function Prizes() {
           <h2 className="font-display text-2xl font-bold text-off-white mb-6">
             OVERALL WINNERS
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {prizes.map((prize, i) => (
               <div
                 key={prize.title}
-                className={`p-8 text-center ${prize.highlight ? "rough-border-accent tilt-slight" : i === 1 ? "rough-border tilt-right" : "dashed-border tilt-left"}`}
+                className={`p-5 sm:p-6 lg:p-8 text-center ${prize.highlight ? "rough-border-accent tilt-slight" : i === 1 ? "rough-border tilt-right" : "dashed-border tilt-left"}`}
               >
                 <div className="font-hand text-4xl text-accent mb-4">
                   {prize.place}

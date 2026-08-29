@@ -57,7 +57,7 @@ export default function Sponsors() {
         </div>
 
         {/* Become a sponsor CTA */}
-        <div className="mt-16 paper-cut p-8 text-center tilt-right">
+        <div className="mt-16 paper-cut p-5 sm:p-8 text-center tilt-right">
           <h2 className="font-display text-2xl font-bold text-near-black mb-4">
             WANT TO SUPPORT THE NEXT GENERATION?
           </h2>
@@ -67,7 +67,7 @@ export default function Sponsors() {
           </p>
           <a
             href="mailto:neighborhoodhacks@gmail.com"
-            className="inline-block font-mono text-sm uppercase tracking-[0.15em] bg-near-black text-off-white px-8 py-3 hover:bg-accent hover:text-near-black transition-colors font-semibold"
+            className="inline-block font-mono text-sm uppercase tracking-[0.15em] bg-near-black text-off-white px-4 sm:px-8 py-3 hover:bg-accent hover:text-near-black transition-colors font-semibold"
           >
             BECOME A SPONSOR →
           </a>

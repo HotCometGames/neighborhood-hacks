@@ -16,7 +16,7 @@ export default function Footer() {
     <footer className="torn-paper-top py-12 px-4 sm:px-8 mt-12">
       <div className="max-w-6xl mx-auto">
         {/* Top section — asymmetric layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 mb-12">
           {/* Branding — tilted slightly */}
           <div className="tilt-slight">
             <Link href="/" className="inline-block">
@@ -73,7 +73,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:neighborhoodhacks@gmail.com"
-                  className="font-mono text-sm text-near-black/70 hover:text-near-black transition-colors font-semibold"
+                  className="font-mono text-sm text-near-black/70 hover:text-near-black transition-colors font-semibold [overflow-wrap:anywhere]"
                 >
                   neighborhoodhacks@gmail.com
                 </a>
