@@ -168,9 +168,8 @@ export default function Home() {
               READY TO BUILD?
             </h2>
             <p className="font-mono text-base text-near-black/80 mb-8 max-w-lg mx-auto font-semibold">
-              Your neighborhood has problems worth solving. Work solo or with
-              up to four teammates, pick a real problem, and build the fix in a
-              week.
+              Your neighborhood has problems worth solving. Work in a team of
+              1-5 people, pick a real problem, and build the fix in a week.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
