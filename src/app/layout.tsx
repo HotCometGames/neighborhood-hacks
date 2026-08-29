@@ -1,47 +1,37 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, IBM_Plex_Mono, Caveat } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["400", "500", "600", "700"],
-});
-
-const ibmPlexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  weight: ["400", "500", "600"],
-});
-
-const caveat = Caveat({
-  subsets: ["latin"],
-  variable: "--font-hand",
-  weight: ["400", "500", "600", "700"],
-});
+const destination = "https://neighborhoodhacks.org/";
 
 export const metadata: Metadata = {
-  title: "Neighborhood Hacks — Build Locally, Share Globally",
-  description:
-    "A global hackathon for high schoolers. Over seven days, students worldwide design and build solutions to challenges in their own communities.",
+  title: "Neighborhood Hacks has moved",
+  description: "Visit the official Neighborhood Hacks website.",
+  alternates: { canonical: destination },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout() {
   return (
-    <html
-      lang="en"
-      className={`${spaceGrotesk.variable} ${ibmPlexMono.variable} ${caveat.variable}`}
-    >
-      <body className="grain-overlay grid-bg antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+    <html lang="en">
+      <head>
+        <meta httpEquiv="refresh" content={`0;url=${destination}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.location.replace('https://neighborhoodhacks.org' + window.location.pathname.replace(/^\\/neighborhood-hacks/, '') + window.location.search + window.location.hash);",
+          }}
+        />
+      </head>
+      <body>
+        <main>
+          <h1>Neighborhood Hacks has moved</h1>
+          <p>
+            Continue to the{" "}
+            <a href={destination}>official Neighborhood Hacks website</a>.
+          </p>
+        </main>
       </body>
     </html>
   );
